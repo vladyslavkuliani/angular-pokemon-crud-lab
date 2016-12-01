@@ -29,7 +29,7 @@ Your finished product will
 
 ## Getting Started
 
-1. Fork this repo, and clone it into your `wdi` folder on your local machine.
+1. Clone this into your `wdi` folder on your local machine.
 2. Change directories into `angular-routing-lab`.
 3. Run `budo -P --host=localhost --open` from the Terminal to start your server and open your app in the browser.
 1. Include `ngRoute`:
