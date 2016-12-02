@@ -1,0 +1,15 @@
+<div ng-init="editing = false">
+    <div class="single-pokemon">
+        <img class="display-pokemon" src="{{pokemonShowCtrl.pokemon.image}}" />
+    </div>
+    <div class="info personal-info">
+      <p><b>Pokedex:</b> <span ng-hide="editing">{{pokemonShowCtrl.pokemon.pokedex}}</span><input type="text" ng-model="pokemonShowCtrl.pokemon.pokedex" ng-show="editing"/></p>
+      <p><b>Name:</b> <span ng-hide="editing">{{pokemonShowCtrl.pokemon.name}}</span><input type="text" ng-model="pokemonShowCtrl.pokemon.name" ng-show="editing"/></p>
+      <p><b>Evolves from:</b> <span ng-hide="editing">{{pokemonShowCtrl.pokemon.evolves_from}}</span><input type="text" ng-model="pokemonShowCtrl.pokemon.evolves_from" ng-show="editing"/></p>
+      <hr>
+      <div class="edit-button"><a ng-href="#"><button class="btn btn-success" ng-click="pokemonShowCtrl.updatePokemon(pokemonShowCtrl.pokemon); editing = false" ng-hide="!editing"><span class="glyphicon glyphicon-save"></span></button></a></div>
+      <div class="cancel-button"><a ng-href="#"><button class="btn btn-danger" ng-click="pokemonShowCtrl.cancel(); editing = false" ng-hide="!editing"><span class="glyphicon glyphicon-ban-circle"></span></button></a></div>
+      <div class="edit-button"><a ng-href="#"><button class="btn btn-success" ng-click="editing = true" ng-hide="editing"><span class="glyphicon glyphicon-pencil"></span></button></a></div>
+      <div class="delete-button"><a ng-href="#"><button class="btn btn-danger" ng-hide="editing" ng-click="pokemonShowCtrl.deletePokemon()"><span class="glyphicon glyphicon-trash"></span></button></a></div>
+    </div>
+</div>

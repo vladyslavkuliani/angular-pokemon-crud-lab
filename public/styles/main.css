@@ -1,0 +1,50 @@
+body{
+    background: rgb(233,235,238);
+}
+
+.container{
+    margin-left: 15%;
+}
+
+.display-pokemon{
+  width: 200px;
+  height: 200px;
+}
+
+.pokemon{
+  float: left;
+  margin: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background: white;
+}
+
+.info{
+  padding-left: 20px;
+}
+
+.learn-more{
+  margin:0 auto;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.single-pokemon{
+    margin: 20px;
+    float: left;
+    border: 2px solid black;
+}
+
+.personal-info{
+  display: inline-block;
+
+  background: white;
+  border: 2px solid black;
+  width: 400px;
+  height: 200px;
+  margin-top: 20px;
+}
+
+.edit-button, .cancel-button{
+  float: left;
+}

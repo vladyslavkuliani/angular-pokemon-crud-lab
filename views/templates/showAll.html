@@ -1,0 +1,17 @@
+<div ng-repeat="pokemon in pokemonCtrl.pokemon" ng-init="show = false">
+    <div class="pokemon" ng-mouseenter="show = true" ng-mouseleave="show = false">
+        <img class="display-pokemon" src="{{pokemon.image}}" />
+        <div ng-show="show">
+            <hr>
+            <div class="info">
+                <h4>
+                <p><b>Pokedex:</b> {{pokemon.pokedex}}</p>
+                <p><b>Name:</b> {{pokemon.name}}</p>
+                <p><b>Evolves from:</b> {{pokemon.evolves_from}}</p>
+              </h4>
+            </div>
+            <div class="learn-more"><a ng-href="/pokemon/{{pokemon._id}}"><div class="btn btn-success"><span class="glyphicon glyphicon-arrow-right"><b>Learn More</b></span></div></a></div>
+        </div>
+    </div>
+
+</div>
